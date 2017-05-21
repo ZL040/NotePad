@@ -4,6 +4,7 @@
  通过从数据库多读取一列时间COLUMN_NAME_MODIFICATION_DATE，显示文件处理时间。
  
  String[] dataColumns = { NotePad.Notes.COLUMN_NAME_TITLE ,NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE} ;
+ 
  int[] viewIDs = { android.R.id.text1 ,android.R.id.text2};
  
  添加布局文件notelist-item.xml，代码如下：
