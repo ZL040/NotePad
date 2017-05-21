@@ -76,10 +76,16 @@ String where = "title LIKE '%"+keyWord.getText().toString()+"%'";
 3--可以导出笔记
 添加ToFile类生成文件夹再生成文件，不然故意出错。
 
+/**
+ * Created by 54476 on 2017/5/20.
+ */
+
 public class ToFile {
     public static void writeTxtToFile(String strcontent, String filePath,String fileName) {
+        // 生成文件夹之后，再生成文件，不然会出错
         makeFilePath(filePath, fileName);
         String strFilePath = filePath + fileName;
+        // 每次写入时，都换行写
         String strContent = strcontent + "\n";
         try {
             File file = new File(strFilePath);
@@ -132,6 +138,7 @@ public class ToFile {
     }
 
 }
+
 导出.txt文件，
 ![image](https://github.com/ZL040/NotePad/blob/master/demo/4.png)
 导出后的效果图：
