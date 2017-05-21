@@ -46,14 +46,14 @@
 
 通过添加where语句对数据库进行查询操作，使用LIKE进行模糊匹配。
 
-String where = "title LIKE '%"+keyWord.getText().toString()+"%'";
+```String where = "title LIKE '%"+keyWord.getText().toString()+"%'";```
 
 ![image](https://github.com/ZL040/NotePad/blob/master/demo/2.png)
 
 3--可以更换背景颜色
 
 添加如下代码来更换背景颜色
-
+```
             switch ((int)(Math.random()*5)){
                 case 0 :
                     mainBg.setBackgroundColor(Color.parseColor("#4169E1"));
@@ -71,11 +71,11 @@ String where = "title LIKE '%"+keyWord.getText().toString()+"%'";
                     mainBg.setBackgroundColor(Color.parseColor("#000"));
                     break;
             }
-            
+```            
 ![image](https://github.com/ZL040/NotePad/blob/master/demo/3.png)
 3--可以导出笔记
 添加ToFile类生成文件夹再生成文件，不然故意出错。
-
+```
 /**
  * Created by 54476 on 2017/5/20.
  */
@@ -137,7 +137,7 @@ public class ToFile {
         }
     }
 
-
+```
 导出.txt文件，
 
 ![image](https://github.com/ZL040/NotePad/blob/master/demo/4.png)
