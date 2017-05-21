@@ -54,7 +54,14 @@ String where = "title LIKE '%"+keyWord.getText().toString()+"%'";
 
 添加如下代码来更换背景颜色
 
- case R.id.menu_changebg:
+  /*
+           * Launches a new Activity using an Intent. The intent filter for the Activity
+           * has to have action ACTION_PASTE. No category is set, so DEFAULT is assumed.
+           * In effect, this starts the NoteEditor Activity in NotePad.
+           */
+          startActivity(new Intent(Intent.ACTION_PASTE, getIntent().getData()));
+          return true;
+        case R.id.menu_changebg:
             switch ((int)(Math.random()*5)){
                 case 0 :
                     mainBg.setBackgroundColor(Color.parseColor("#4169E1"));
