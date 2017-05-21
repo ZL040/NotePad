@@ -51,6 +51,7 @@ String where = "title LIKE '%"+keyWord.getText().toString()+"%'";
 ![image](https://github.com/ZL040/NotePad/blob/master/demo/2.png)
 
 3--可以更换背景颜色
+
 添加如下代码来更换背景颜色
 
  case R.id.menu_changebg:
@@ -137,10 +138,11 @@ public class ToFile {
         }
     }
 
-}
 
 导出.txt文件，
+
 ![image](https://github.com/ZL040/NotePad/blob/master/demo/4.png)
+
 导出后的效果图：
 
 ![image](https://github.com/ZL040/NotePad/blob/master/demo/5.png)
